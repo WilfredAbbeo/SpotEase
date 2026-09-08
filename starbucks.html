@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks - SpotEase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation with Logo -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-graduation-cap"></i> SpotEase
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="browse.html">All Spaces</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="academicDropdown" data-bs-toggle="dropdown">Academic</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gelman.html">Gelman Library</a></li>
+                        <li><a class="dropdown-item" href="himmelfarb.html">Himmelfarb Library</a></li>
+                        <li><a class="dropdown-item" href="duques.html">Duquès Building</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="cafeDropdown" data-bs-toggle="dropdown">Cafés & Others</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="starbucks.html">Starbucks</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" data-bs-toggle="dropdown">Community</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="announcement.html">Announcement</a></li>
+                        <li><a class="dropdown-item" href="board.html">Message Board</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-4">
+
+        <!-- Page Title -->
+        <h1 class="mb-3">Starbucks</h1>
+        <p class="lead mb-3">
+            Two on-campus Starbucks locations with different atmospheres for studying, short breaks, and coffee runs.
+        </p>
+
+        <!-- In-page navigation for the two locations -->
+        <ul class="list-unstyled mb-4">
+            <li class="mb-2">
+                <a class="d-inline-block p-2 border rounded text-decoration-none" href="#starbucks-gelman">
+                    Starbucks – Gelman Library
+                </a>
+            </li>
+            <li>
+                <a class="d-inline-block p-2 border rounded text-decoration-none" href="#starbucks-hospital">
+                    Starbucks – GW Hospital
+                </a>
+            </li>
+        </ul>
+
+
+        <!-- Starbucks @ Gelman Section -->
+        <section id="starbucks-gelman" class="mb-5">
+            <h2 class="h4 mb-3">Starbucks – Gelman Library</h2>
+            <div class="row g-3">
+                <div class="col-md-5">
+                  <div class="ratio ratio-4x3">
+                    <img src="images/gelman-starbucks.jpg" class="img-fluid rounded shadow-sm object-fit-cover" alt="Gelman Starbucks">
+                  </div>
+                </div>
+            </div>
+            <br>
+            <p>
+                Located on or near the lower level of Gelman Library, this Starbucks sits right in the middle of campus.
+                Most of the crowd here is made up of students moving between classes or study sessions upstairs, so the
+                atmosphere leans more academic than touristy. While there is still the usual café background noise, it
+                tends to stay relatively steady and predictable, which can work well as a backdrop for light studying or
+                laptop work.
+            </p>
+            <p>
+                Seating is designed with students in mind, with tables that can fit a laptop and notes, and it is easy to
+                grab a drink and then head directly into Gelman’s study floors. It is a convenient option when you want
+                to stay in a study mindset but change the immediate environment from a quiet floor to a more casual space.
+            </p>
+
+            <h3 class="h5 mt-4">Best For</h3>
+            <ul>
+                <li>Solo studying or light laptop work with moderate, steady background noise.</li>
+                <li>Short meetups or pair work before or after heading into Gelman Library.</li>
+                <li>Students who want quick access to library study floors after grabbing a drink.</li>
+            </ul>
+        </section>
+
+        <!-- Starbucks @ GW Hospital Section -->
+        <section id="starbucks-hospital" class="mb-5">
+            <h2 class="h4 mb-3">Starbucks – GW Hospital</h2>
+            <div class="row g-3">
+                <div class="col-md-5">
+                  <div class="ratio ratio-4x3">
+                    <img src="images/hospital-starbucks.jpg" class="img-fluid rounded shadow-sm object-fit-cover" alt="GW Hospital Starbucks">
+                  </div>
+                </div>
+            </div>
+            <br>
+            <p>
+                This Starbucks is located inside or next to GW Hospital and serves a wider mix of people, including
+                hospital staff, visitors, and students coming from nearby health sciences buildings. The environment
+                tends to be more active, with more foot traffic, conversations, and movement related to hospital
+                schedules and patient visiting hours.
+            </p>
+            <p>
+                Because of the busier flow and more frequent interruptions, this location works better as a quick stop
+                than as a long-term study spot. It can still be a useful place to pause between clinical activities,
+                labs, or commutes, especially if you need a short reset rather than a full study block.
+            </p>
+
+            <h3 class="h5 mt-4">Best For</h3>
+            <ul>
+                <li>Quick coffee runs between hospital, labs, or health sciences activities.</li>
+                <li>Short breaks or waiting periods rather than extended laptop study sessions.</li>
+                <li>Late or off-hour stops when you are already near the hospital area.</li>
+            </ul>
+        </section>
+
+        <!-- Comparison Helper -->
+        <section class="mb-5">
+            <h2 class="h4 mb-3">Which one should I pick?</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h3 class="h5">If you’re closer to Gelman Library</h3>
+                    <ul class="mb-0">
+                        <li>
+                            Choose the <strong>Gelman Library Starbucks</strong> if you want a more study-oriented
+                            atmosphere with mostly students around you.
+                        </li>
+                        <li>
+                            A better fit for light studying, laptop work, or meeting a friend before heading into
+                            Gelman’s study floors.
+                        </li>
+                        <li>
+                            Convenient when your classes, dorm, or usual study spaces are centered around the main campus.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <h3 class="h5">If you’re near GW Hospital</h3>
+                    <ul class="mb-0">
+                        <li>
+                            Choose the <strong>GW Hospital Starbucks</strong> if you are moving between hospital,
+                            labs, or health sciences buildings and just need a quick stop.
+                        </li>
+                        <li>
+                            A better fit for short breaks, waiting periods, or very early/late coffee runs.
+                        </li>
+                        <li>
+                            Convenient when your schedule is tied to clinical activities or you are already on the
+                            hospital side of campus.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section with Maps -->
+        <section id="locations" class="mb-5">
+          <h2 class="h4 mb-3">Locations & Busy Level</h2>
+
+
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-6">
+                  <h3 class="h5 mb-2">Starbucks – Gelman Library Area</h3>
+                  <div class="ratio ratio-1x1 border rounded shadow-sm" style="width: 500px;">
+                    <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1846.2671685957487!2d-77.04938550273542!3d38.900226037957836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7b056c19211%3A0xac2452be8155b819!2sStarbucks!5e0!3m2!1sen!2sus!4v1764063177950!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy">
+                     </iframe>
+                  </div>
+                  <p class="mt-2 mb-0 small">
+                    Near main campus, mostly students, good for light study & transitions into library floors.
+                  </p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <h3 class="h5 mb-2 ">Busy Level Heatmap</h3>
+                  <div class="d-flex justify-content-center" style="width: 500px;">
+                    <canvas id="gelmanHeatmapDemo" width="300" height="300" class="border rounded shadow-sm"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                  <h3 class="h5 mb-2">Starbucks – GW Hospital Area</h3>
+                  <div class="ratio ratio-1x1 border rounded shadow-sm" style="width: 500px;">
+                    <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1846.2578741964019!2d-77.05042534560192!3d38.90058349630214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7b16047d7e9%3A0x90226c367edc029c!2sStarbucks!5e0!3m2!1sen!2sus!4v1764063177950!5m2!1sen!2sus" style="border:0;" allowfullscreen="" loading="lazy">  
+                     </iframe>
+                  </div>
+                  <p class="mt-2 mb-0 small">
+                    High foot traffic, quick-stop location, better for short reset than extended study.
+                  </p>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <h3 class="h5 mb-2">Busy Level Heatmap</h3>
+                  <div class="d-flex justify-content-center" style="width: 500px;">
+                    <canvas id="hospitalHeatmapDemo" width="300" height="300" class="border rounded shadow-sm"></canvas>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="reviews" class="mb-5">
+            <h2 class="h4 mb-3">Student Reviews</h2>
+
+            <div class="row">
+                <!-- Review Form: col-5 -->
+                <div class="col-md-5">
+                    <div class="card p-3 mb-4">
+                        <h5 class="mb-3">Leave a Review</h5>
+                        <form id="reviewForm">
+                            <div class="mb-3">
+                                <label class="form-label">Your Name</label>
+                                <input type="text" id="reviewName" class="form-control" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Rating</label>
+                                <select id="reviewRating" class="form-select" required>
+                                    <option value="">Select rating</option>
+                                    <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                                    <option value="4">⭐⭐⭐⭐ (4)</option>
+                                    <option value="3">⭐⭐⭐ (3)</option>
+                                    <option value="2">⭐⭐ (2)</option>
+                                    <option value="1">⭐ (1)</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Review</label>
+                                <textarea id="reviewText" class="form-control" rows="3" placeholder="Write your review..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Review List: col-7 -->
+                <div class="col-md-7">
+                    <h5 class="mb-3">What Students Are Saying</h5>
+                    <div id="reviewList" class="list-group"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        © 2025 SpotEase - GWU Study Spaces
+    </footer>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/demo-heatmap.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Board - SpotEase</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background: #f5f7fa;
+        }
+        .board-hero {
+            background: linear-gradient(135deg, #173B58, #1f5786);
+            color: #fff;
+            padding: 40px 0;
+            margin-bottom: 30px;
+        }
+        .board-hero h1 {
+            font-weight: 700;
+        }
+        .board-hero p {
+            margin-bottom: 0;
+            opacity: 0.9;
+        }
+        .post-card {
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+            border: none;
+        }
+        .post-meta {
+            font-size: 0.85rem;
+            color: #6c757d;
+        }
+        .empty-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #6c757d;
+        }
+        .empty-state i {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .new-post-btn {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#173B58;">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-graduation-cap"></i> SpotEase
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">← Back to Home</a>
+                </li>
+            </ul>
+
+            
+        </div>
+    </div>
+</nav>
+
+<section class="board-hero">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <div>
+                <h1 class="mb-2"><i class="fa-solid fa-comments"></i> Message Board</h1>
+                <p>Share updates, questions, and tips with other GWU students.</p>
+            </div>
+            <div>
+                <a href="create-post.html" class="btn btn-light text-primary new-post-btn">
+                    <i class="fa-solid fa-pen-to-square"></i> New Message
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container mb-5">
+    <div id="postsContainer" class="row g-4">
+    </div>
+
+    <div id="emptyState" class="empty-state d-none">
+        <i class="fa-regular fa-note-sticky"></i>
+        <p>No messages yet. Be the first to share something!</p>
+        <a href="create-post.html" class="btn btn-primary mt-2">
+            <i class="fa-solid fa-pen"></i> Write a Message
+        </a>
+    </div>
+</div>
+
+<footer class="text-center py-3 text-muted">
+    © 2025 SpotEase - Message Board
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/board.js"></script>
+<script src="js/access-control.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Study Spaces - SpotEase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation with Logo -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-graduation-cap"></i> SpotEase
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="browse.html">All Spaces</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="academicDropdown" data-bs-toggle="dropdown">Academic</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gelman.html">Gelman Library</a></li>
+                        <li><a class="dropdown-item" href="himmelfarb.html">Himmelfarb Library</a></li>
+                        <li><a class="dropdown-item" href="duques.html">Duquès Building</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="cafeDropdown" data-bs-toggle="dropdown">Cafés & Others</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="starbucks.html">Starbucks</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" data-bs-toggle="dropdown">Community</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="announcement.html">Announcement</a></li>
+                        <li><a class="dropdown-item" href="board.html">Message Board</a></li>
+                    </ul>
+                </li>
+            </ul>    
+        </div>
+    </div>
+</nav>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Filters Sidebar -->
+            <div class="col-md-3 col-lg-2 bg-light sidebar">
+                <div class="p-3">
+                    <h5>Filters</h5>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Noise Level</label>
+                        <select class="form-select" id="noise-filter">
+                            <option value="">Any</option>
+                            <option value="quiet">Quiet</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="lively">Lively</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Study Amenities</label>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="outlets">
+                            <label class="form-check-label" for="outlets">Power Outlets</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="wifi">
+                            <label class="form-check-label" for="wifi">Strong Wi-Fi</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="whiteboard">
+                            <label class="form-check-label" for="whiteboard">Whiteboard Available</label>
+                        </div>                        
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="group">
+                            <label class="form-check-label" for="group">Group Study</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="couches">
+                            <label class="form-check-label" for="couches">Couches</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="individual-seats">
+                            <label class="form-check-label" for="individual-seats">Individual Seats</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="window-seats">
+                            <label class="form-check-label" for="window-seats">Window Seats</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="printing">
+                            <label class="form-check-label" for="printing">Printing Nearby</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="food-allowed">
+                            <label class="form-check-label" for="food-allowed">Food Allowed</label>
+                        </div>
+
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Open Hours</label>
+                        <select class="form-select" id="open-hours">
+                            <option value="">Any</option>
+                            <option value="regular">Regular Hours</option>
+                            <option value="extended">Extended Hours</option>
+                            <option value="24h">24 Hours</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Capacity</label>
+                        <select class="form-select" id="capacity">
+                            <option value="">Any</option>
+                            <option value="solo">Solo Study</option>
+                            <option value="small-group">Small Group (2–4)</option>
+                            <option value="large-group">Large Group (5+)</option>
+                        </select>
+                    </div>
+
+
+                    <button class="btn btn-primary w-100" onclick="applyFilters()">Apply Filters</button>
+                    <button class="btn btn-outline-secondary w-100 mt-2" onclick="resetFilters()">Reset</button>
+                </div>
+            </div>
+
+
+             <!-- Results -->
+            <div class="col-md-9 col-lg-10">
+                <div class="p-4">
+                    <!-- The location of the emergency mode prompt bar -->
+                    <div id="emergency-mode-alert"></div>
+                    
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h2>All Study Spaces</h2>
+                        <div>
+                            <select class="form-select" id="sort-by">
+                                <option value="name">Sort by Name</option>
+                                <option value="distance">Sort by Distance</option>
+                                <option value="popularity">Sort by Popularity</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row" id="spaces-grid">
+                        <!-- Static examples of study spaces -->
+
+                        <!-- Gelman Library -->
+                    <div class="col-12 mb-4">
+                        <div class="card space-card h-100">
+                            <div class="row g-0">
+                                <!-- Image column -->
+                                <div class="col-md-4">
+                                    <img src="images/gelman.jpg" class="img-fluid w-100 h-100" alt="Gelman Library">
+                                </div>
+                                <!-- Text column -->
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <a href="gelman.html" class="text-decoration-none">Gelman Library</a>
+                                        </h4>
+                                        <p class="mb-1"><strong>Location:</strong> Foggy Bottom Campus, Main Library</p>
+                                        <p class="mb-1"><strong>Contact:</strong> (202) 555-0101</p>
+                                        <p class="mb-0">
+                                            Gelman Library is the main academic library on GW’s Foggy Bottom campus and offers a balanced mix of quiet study zones, individual desks, and collaborative rooms. The building spans multiple floors with reliable Wi-Fi, plenty of outlets, and a variety of seating styles. It’s a popular choice for focused study sessions, research work, or group assignments between classes.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Duques -->
+                    <div class="col-12 mb-4">
+                        <div class="card space-card h-100">
+                            <div class="row g-0">
+                                <!-- Image column -->
+                                <div class="col-md-4">
+                                    <img src="images/Duques.jpg" class="img-fluid w-100 h-100" alt="Duques Building">
+                                </div>
+                                <!-- Text column -->
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <a href="Duques.html" class="text-decoration-none">Duquès Building</a>
+                                        </h4>
+                                        <p class="mb-1"><strong>Location:</strong>  School of Business, student lounge & open seating areas</p>
+                                        <p class="mb-1"><strong>Contact:</strong> (202) 555-0102</p>
+                                        <p class="mb-0">
+                                           Duques Building, home to the GW School of Business, provides bright study lounges and open seating areas ideal for small group discussions or quick work between lectures. With comfortable seating, strong Wi-Fi, and natural lighting throughout the building, it’s a convenient and welcoming space for students who prefer a more social study environment.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                                           
+
+                      <!-- Himmelfarb Library -->
+                    <div class="col-12 mb-4">
+                        <div class="card space-card h-100">
+                            <div class="row g-0">
+                                <!-- Image column -->
+                                <div class="col-md-4">
+                                    <img src="images/Himmelfarb.jpg" class="img-fluid w-100 h-100" alt="Himmelfarb Library">
+                                </div>
+                                <!-- Text column -->
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <a href="Himmelfarb.html" class="text-decoration-none">Himmelfarb Library</a>
+                                        </h4>
+                                        <p class="mb-1"><strong>Location:</strong> FHealth Sciences Library, near GW Hospital</p>
+                                        <p class="mb-1"><strong>Contact:</strong>  (202) 555-0103</p>
+                                        <p class="mb-0">
+                                           Himmelfarb Library serves GW’s health sciences programs and offers a quieter, more focused study setting. With computer workstations, individual carrels, and access to academic resources, it’s especially suitable for students working on intensive reading, exam prep, or long research sessions near the medical campus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                      <!-- Starbucks -->
+                    <div class="col-12 mb-4">
+                        <div class="card space-card h-100">
+                            <div class="row g-0">
+                                <!-- Image column -->
+                                <div class="col-md-4">
+                                    <img src="images/Starbucks.jpg" class="img-fluid w-100 h-100" alt="Starbucks">
+                                </div>
+                                <!-- Text column -->
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h4 class="card-title">
+                                            <a href="Starbucks.html" class="text-decoration-none">Starbucks</a>
+                                        </h4>
+                                        <p class="mb-1"><strong>Location:</strong> Nearby off-campus café within walking distance of Foggy Bottom</p>
+                                        <p class="mb-1"><strong>Contact:</strong> (202) 555-0104</p>
+                                        <p class="mb-0">
+                                           relaxed, café-style setting with steady Wi-Fi and a variety of seating options. The consistent background noise creates a light, energetic atmosphere that suits students who focus better with ambient sound. It’s a comfortable place for short study sessions, casual group work, or a refreshing change from quieter library spaces.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+        © 2025 SpotEase - GWU Study Spaces
+</footer>
+   
+
+                    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

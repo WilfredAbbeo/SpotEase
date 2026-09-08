@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In - SpotEase</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background: #f5f7fa;
+        }
+        .auth-card {
+            max-width: 420px;
+            margin: 80px auto;
+            padding: 30px 35px;
+            border-radius: 12px;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        h2 {
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="auth-card">
+    <h2 class="text-center mb-4">Log In</h2>
+
+    <form id="loginForm">
+        <div class="mb-3">
+            <label class="form-label">Username or Email</label>
+            <input type="text" id="loginIdentifier" class="form-control" placeholder="Enter username or email" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <div class="input-group">
+                <input type="password" id="loginPassword" class="form-control" placeholder="Enter password" required>
+                <button class="btn btn-outline-secondary" type="button" id="toggleLoginPassword">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 mt-2">Log In</button>
+    </form>
+
+    <p class="text-center mt-3">
+        New user?
+        <a href="signup.html">Sign up</a>
+    </p>
+</div>
+
+<script src="js/login.js"></script>
+
+<script>
+const toggleLoginPassword = document.getElementById("toggleLoginPassword");
+const loginPasswordInput = document.getElementById("loginPassword");
+
+toggleLoginPassword.addEventListener("click", () => {
+    const type = loginPasswordInput.type === "password" ? "text" : "password";
+    loginPasswordInput.type = type;
+    toggleLoginPassword.innerHTML =
+        type === "password"
+            ? '<i class="fa-solid fa-eye"></i>'
+            : '<i class="fa-solid fa-eye-slash"></i>';
+});
+</script>
+
+</body>
+</html>

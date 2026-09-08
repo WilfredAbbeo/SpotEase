@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duquès Building - SpotEase</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navigation with Logo -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-graduation-cap"></i> SpotEase
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="browse.html">All Spaces</a></li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="academicDropdown" data-bs-toggle="dropdown">Academic</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="gelman.html">Gelman Library</a></li>
+                        <li><a class="dropdown-item" href="himmelfarb.html">Himmelfarb Library</a></li>
+                        <li><a class="dropdown-item" href="duques.html">Duquès Building</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="cafeDropdown" data-bs-toggle="dropdown">Cafés & Others</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="starbucks.html">Starbucks</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="communityDropdown" data-bs-toggle="dropdown">Community</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="announcement.html">Announcement</a></li>
+                        <li><a class="dropdown-item" href="board.html">Message Board</a></li>
+                    </ul>
+                </li>    
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+    <!-- Page Title -->
+    <h1 class="mb-3">Duquès Building</h1>
+    <p class="lead">
+        Home of the GW School of Business. A highly active building with classrooms, breakout rooms, and multiple open study spaces.
+        Many rooms are available for student use when classes are not in session.
+    </p>
+
+    <!-- Quick Info Badges -->
+    <div class="mb-4">
+        <span class="badge rounded-pill text-bg-light border me-2 mb-2">Business School Hub</span>
+        <span class="badge rounded-pill text-bg-light border me-2 mb-2">Many Classrooms</span>
+        <span class="badge rounded-pill text-bg-light border me-2 mb-2">Breakout Rooms</span>
+        <span class="badge rounded-pill text-bg-light border me-2 mb-2">Open Lounges</span>
+        <span class="badge rounded-pill text-bg-light border me-2 mb-2">Great for Team Projects</span>
+        <span class="badge rounded-pill text-bg-light border me-2 mb-2">Walk-in Classroom Study</span>
+        <span class="badge rounded-pill text-bg-light border me-2 mb-2">Whiteboards Available</span>
+        <span class="badge rounded-pill text-bg-light border me-2 mb-2">Projector-Equipped Rooms</span>
+        <span class="badge rounded-pill text-bg-light border me-2 mb-2">Plenty of Outlets</span>
+        <span class="badge rounded-pill text-bg-light border me-2 mb-2">Near Campus Cafés</span>
+    </div>
+
+    <hr>
+<section id="about-gelman" class="mb-5">
+  <h2 class="h4 mb-3">About this Place</h2>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="ratio ratio-4x3">
+        <img src="images/duques-hall.jpg" class="img-fluid rounded shadow-sm object-fit-cover" alt="Duques Hall">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="ratio ratio-4x3">
+        <img src="images/duques-classroom.jpg" class="img-fluid rounded shadow-sm object-fit-cover" alt="Duques 151">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="ratio ratio-4x3">
+        <img src="images/duques-building.jpg" class="img-fluid rounded shadow-sm object-fit-cover" alt="Duques Outside">
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about-duques" class="mb-5">
+
+            <h4 class="h5 mt-3">Study Environment</h4>
+            <p>
+                Duquès Hall offers one of the most flexible study environments on campus. Classrooms become quiet study spaces when not
+                in active use, and breakout rooms are ideal for group projects. Open lounges on multiple floors provide casual areas for
+                laptop work or quick meetings.
+            </p>
+
+            <h3 class="h5 mt-4">Best For</h3>
+            <ul>
+                <li>Group projects needing breakout rooms</li>
+                <li>Quick study sessions between classes</li>
+                <li>Casual laptop work in open lounge spaces</li>
+                <li>Classroom study when no class is scheduled</li>
+            </ul>
+    </section>
+
+    <hr class="my-4">
+
+    <!-- Availability Section -->
+    <section id="availability">
+        <h2 class="h4 mb-3">Availability & Study Rooms</h2>
+        <p class="text-muted">
+            This table is a sample view of typical availability in Duquès classrooms and study rooms.
+            Actual schedules and reservations would be managed through GW’s official systems.
+        </p>
+
+        <!-- Filter controls (UI only) -->
+        <form class="row g-3 mb-3">
+            <div class="col-md-4">
+                <label for="preferred-time" class="form-label">Preferred Time</label>
+                <select id="preferred-time" class="form-select">
+                    <option value="">Any time</option>
+                    <option value="morning">Morning (08:00 – 12:00)</option>
+                    <option value="afternoon">Afternoon (12:00 – 16:00)</option>
+                    <option value="evening">Evening (16:00 – 20:00)</option>
+                </select>
+            </div>
+            <div class="col-md-4">
+                <label for="party-size" class="form-label">Party Size</label>
+                <select id="party-size" class="form-select">
+                    <option value="">Any group size</option>
+                    <option value="1">1 person</option>
+                    <option value="2">2 people</option>
+                    <option value="3-4">3–4 people</option>
+                    <option value="5-6">5–6 people</option>
+                    <option value="7plus">7+ people</option>
+                </select>
+            </div>
+        </form>
+
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle">
+                <thead class="table-light">
+                    <tr>
+                        <th>Time Slot</th>
+                        <th>Space</th>
+                        <th>Space Type</th>
+                        <th>Availability</th>
+                        <th>Reservation</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- Classroom examples -->
+                    <tr>
+                        <td>09:00 – 10:00</td>
+                        <td>Duquès 251</td>
+                        <td>Classroom</td>
+                        <td>Class in session</td>
+                        <td>Not available</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 – 11:00</td>
+                        <td>Duquès 251</td>
+                        <td>Classroom</td>
+                        <td>No class scheduled (Open for study)</td>
+                        <td>Walk-in only</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 – 12:00</td>
+                        <td>Duquès 152</td>
+                        <td>Classroom</td>
+                        <td>No class scheduled (Open for study)</td>
+                        <td>Walk-in only</td>
+                    </tr>
+                    <tr>
+                        <td>12:00 – 13:00</td>
+                        <td>Duquès 152</td>
+                        <td>Classroom</td>
+                        <td>Class in session</td>
+                        <td>Not available</td>
+                    </tr>
+
+                    <!-- Study Rooms -->
+                    <tr>
+                        <td>13:00 – 14:00</td>
+                        <td>Breakout Room 453</td>
+                        <td>Study Room</td>
+                        <td>Available</td>
+                        <td>
+                            <button class="btn btn-outline-primary btn-sm" disabled>
+                                Reserve via GW Portal
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>14:00 – 15:00</td>
+                        <td>Breakout Room 453</td>
+                        <td>Study Room</td>
+                        <td>Reserved</td>
+                        <td>—</td>
+                    </tr>
+                    <tr>
+                        <td>15:00 – 16:00</td>
+                        <td>Breakout Room 460</td>
+                        <td>Study Room</td>
+                        <td>Available</td>
+                        <td>
+                            <button class="btn btn-outline-primary btn-sm" disabled>
+                                Reserve via GW Portal
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <hr class="my-4">
+
+    <!-- Location Section -->
+    <section id="location">
+        <h2 class="h4 mb-3">Location</h2>
+
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="ratio ratio-4x3 border">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d923.1416220152588!2d-77.04896508888142!3d38.89960777757058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7b1be3b03a5%3A0xfff46998d7f16324!2sRic%20and%20Dawn%20Duqu%C3%A8s%20Hall!5e0!3m2!1sen!2sus!4v1764115617590!5m2!1sen!2sus"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="reviews" class="mb-5">
+        <h2 class="h4 mb-3">Student Reviews</h2>
+
+        <div class="row">
+            <!-- Review Form: col-5 -->
+            <div class="col-md-5">
+                <div class="card p-3 mb-4">
+                    <h5 class="mb-3">Leave a Review</h5>
+                    <form id="reviewForm">
+                        <div class="mb-3">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" id="reviewName" class="form-control" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Rating</label>
+                            <select id="reviewRating" class="form-select" required>
+                                <option value="">Select rating</option>
+                                <option value="5">⭐⭐⭐⭐⭐ (5)</option>
+                                <option value="4">⭐⭐⭐⭐ (4)</option>
+                                <option value="3">⭐⭐⭐ (3)</option>
+                                <option value="2">⭐⭐ (2)</option>
+                                <option value="1">⭐ (1)</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Review</label>
+                            <textarea id="reviewText" class="form-control" rows="3" placeholder="Write your review..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Review List: col-7 -->
+            <div class="col-md-7">
+                <h5 class="mb-3">What Students Are Saying</h5>
+                <div id="reviewList" class="list-group"></div>
+            </div>
+        </div>
+    </section>
+</div>
+<footer>
+        © 2025 SpotEase - GWU Study Spaces
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
